@@ -1,4 +1,5 @@
 import React from "react";
+import skillImg from "../../Assets/skill2.jpg";
 import classes from "./Skills.module.css";
 
 const Skills = () => {
@@ -23,7 +24,7 @@ const Skills = () => {
           })}
         </div>
         <div className={classes.image}>
-          <img src="./skill2.jpg" alt="logo" />
+          <img src={skillImg} alt="logo" />
         </div>
       </div>
     </section>

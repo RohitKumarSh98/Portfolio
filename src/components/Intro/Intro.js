@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Intro.module.css";
+import coderImg from "../../Assets/coder.png";
 
 const Intro = () => {
   return (
@@ -17,7 +18,7 @@ const Intro = () => {
         </p>
       </div>
       <div className={classes.image}>
-        <img src="./coder.png" alt="coderImage" />
+        <img src={coderImg} alt="coderImage" />
       </div>
     </section>
   );

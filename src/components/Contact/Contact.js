@@ -1,3 +1,4 @@
+import contactImg from "../../Assets/contact.png";
 import classes from "./Contact.module.css";
 
 const Contact = () => {
@@ -43,7 +44,7 @@ const Contact = () => {
         </p>
       </div>
       <div className={classes.image}>
-        <img src="./contact.png" alt="Contacts Icons" />
+        <img src={contactImg} alt="Contacts Icons" />
       </div>
     </section>
   );
