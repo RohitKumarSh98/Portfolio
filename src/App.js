@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Navigation from "./components/NavigationBar/Navigation";
 import HomePage from "./pages/HomePage";
 import SkillPage from "./pages/SkillPage";
@@ -13,6 +13,9 @@ function App() {
     <Fragment>
       <Navigation />
       <Switch>
+        <Route path="/" exact>
+          <Redirect to="/home" />
+        </Route>
         <Route path="/home">
           <HomePage />
         </Route>
@@ -24,6 +27,9 @@ function App() {
         </Route>
         <Route path="/contact">
           <ContactPage />
+        </Route>
+        <Route path="*">
+          <Redirect to="/home" />
         </Route>
       </Switch>
     </Fragment>
