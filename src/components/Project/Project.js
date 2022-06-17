@@ -4,6 +4,13 @@ import classes from "./Project.module.css";
 const Projects = () => {
   const Data = [
     {
+      name: "My Portfolio",
+      title: "Open Source Project.",
+      Link: "https://rohitkumarsh98.github.io/Portfolio/",
+      Detail:
+        "It consists of my skills, Projects and my contact info. Made this using React.",
+    },
+    {
       name: "Snack Bar",
       title: "It is a online Food ordering demo app.",
       Link: "https://rohitkumarsh98.github.io/food_order_app/",
